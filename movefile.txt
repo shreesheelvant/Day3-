@@ -1,0 +1,10 @@
+touch abc.txt def.txt
+for file in 'ls *.txt'
+do
+echo $file;
+done
+for file in 'ls*.txt'
+do
+folderName= echo $file | awk -F. '{print $1}';
+echo $folderName;
+done
